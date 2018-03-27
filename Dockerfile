@@ -3,6 +3,7 @@ ENV HOME=/root
 RUN apt-get update -y
 RUN apt-get install git -y
 RUN apt-get install elinks -y
+RUN apt-get install curl  -y
 RUN apt-get install apache2 -y
 WORKDIR /
 RUN git clone https://github.com/espiderinc/web-app-docker-demo
