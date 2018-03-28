@@ -8,7 +8,6 @@ RUN apt-get install apache2 -y
 WORKDIR /
 RUN git clone https://github.com/espiderinc/web-app-docker-demo
 WORKDIR /web-app-docker-demo/
-RUN git checkout -b master
 RUN git pull origin master
 RUN cp index.html /var/www/html/
 RUN service apache2 restart
